@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+:root {
+    --gold: #F7BB03;
+    --brown: #562102;
+    --brownOld: #650000;
+    --cream: #BC6A34;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #e6c970;
+    overflow-x: hidden;
+    
+    
+}
+
+nav {
+    display: flex;
+    background-color: var(--gold);
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    list-style: none;
+    margin-right: 80px;
+}
+
+
+
+
+nav ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--brownOld);
+    font-family: 'Roboto';
+    
+}
+
+
+nav ul li a:hover {
+    color: rgb(95, 27, 90);
+}
+
+.iconmenu {
+    display: none;
+    color: var(--brownOld);
+
+}
+
+.logo {
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--brownOld);
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+    background-image:
+     linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(95, 84, 22, 0.73)) ,
+     url(https://warfarehistorynetwork.com/wp-content/uploads/2018/12/M-Constantine-LEAD-4C-Mar18-scaled.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -4;
+    
+}
+
+
+.hero .contents {
+    padding: 13rem 7%;
+    max-height: 60rem;
+    text-align:left;
+    z-index: 10;
+}
+
+.hero .contents h1 {
+    color: white;
+    font-size: 4rem;
+    
+}
+.hero .contents p {
+    color: white;
+    font-size: 1em;
+}
+
+
+/*END HERO SECTION */
+
+
+/* ABOUT SECTION */
+.about {
+    padding: 6rem 7% 1.4rem;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 2rem;
+    color: var(--brown);
+    letter-spacing: 10px;
+}
+
+.about .row {
+    display: flex;
+}
+
+
+.about .row .about-img {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .about-img img {
+    width: 100%;
+}
+
+.about .row .contents {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .contents h4 {
+    color: var(--brownOld);
+    font-size: 1.4rem;
+    padding: 1rem 0 2rem 0;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.about .contents p {
+    color: var(--brown);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+
+
+
+/* END ABOUT SECTION */
+
+/* TOKOH START */
+.tokoh{
+    padding: 0 0 1.4rem;
+}
+
+.tokoh .tokoh-title {
+    padding: 5rem 0 2rem;
+}
+
+.tokoh h1,
+.locate h1,
+.footer-title h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: var(--brown);
+}
+
+.tokoh .tokoh-title p,
+.locate .locate-title p,
+footer .footer-title p{
+    text-align: center;
+    margin: auto;
+    max-width: 35rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+.tokoh .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+
+.tokoh .row .card {
+    text-align: center;
+    margin: 2rem;
+}
+
+.tokoh .row .card img {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.tokoh .row .card .card-title {
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+.tokoh .row .card p {
+    font-size: 0.7rem;
+}
+
+
+
+/* END TOKOH SECTION */
+
+/* START LOCATE SECTION */
+.locate {
+    padding-top: 5rem;
+}
+
+.locate .row {
+    display: flex;
+    margin: 2rem 4% 10rem;
+    /* background-color: var(--gold); */
+}
+
+.locate .row .maps .map{
+    width: 40rem;
+    height: 25rem;
+}
+
+.forms {
+    margin: 4rem 5rem 4rem 1rem;
+    justify-content: space-between;
+}
+
+.locate .row .forms .form {
+    margin: 2rem;
+}
+
+/* .locate .row .forms 
+{} */
+
+.locate .row .forms input{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 6px;
+    
+}
+
+
+
+.locate .row .forms .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locate .row .forms .btn button {
+    padding: 0.3rem 2rem;
+    border-radius: 25px;
+    background-color: var(--gold);
+    color: white;
+}
+
+
+/* END LOCATE SECTION */
+
+/* FOOTER START */
+footer {
+    background-color: var(--brown);
+    margin-top: 7rem;
+}
+
+footer .cp {
+    color: #e6c970;
+    font-size: 0.8rem;
+    opacity: 0.5;
+    display: flex;
+    padding-top: 1rem;
+}
+
+footer .cp p {
+    margin: auto;
+}
+
+footer .footer-title {
+    padding: 2rem 7%;
+}
+
+
+footer .footer-title h1 {
+    color: #e6c970;
+}
+footer .footer-title p {
+    color: #e6c970;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer .footer-logo {
+    display: flex;
+    padding: 2rem 7%;
+    margin: auto;
+    justify-content: center;
+}
+
+footer .footer-logo .logo {
+    color: #e6c970;
+    font-size: 2rem;
+    margin: 1rem;
+}
+/* FOOTER END */
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 768px) {
+    nav ul {
+        width: 50%;
+    }
+    
+    .iconmenu {
+        display: none;
+    }
+
+    .about .row{
+        flex-wrap: wrap;
+    }
+
+    .about .row h4 {
+        padding: 1rem 0;
+    }
+
+
+    .locate {
+        padding: 0;
+        margin: 0;
+    }
+
+    .locate .row{
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+
+    .locate .row .maps {
+        padding: 2rem 7% 0rem;
+    }
+
+    .locate .row .maps .map{
+        width: 34rem;
+        height: 25rem;
+    }
+
+    .locate .forms {
+        padding: 2rem 7%;
+        margin: auto;
+    }
+
+    .locate .forms .form input{
+        width: 25rem;
+        
+    }
+}
+
+@media screen and (max-width : 578px) {
+
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        height: 100vh;
+        width: 60%;
+        margin: 0;
+        z-index: -1;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--gold);
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+    nav ul.slider{
+        transform: translateX(0);
+    }
+    nav ul li a {
+        color: aliceblue;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+    .iconmenu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .hero {
+        z-index: -100;
+    }
+
+    .hero .contents h1 {
+        font-size: 2.6rem;   
+    }
+
+    .about .row{
+        flex-wrap: wrap;
+    }
+
+    .about .row .about-img img {
+        height: 15rem;
+        object-fit: cover;
+    }
+
+    .about .contents h4 {
+        padding: 1rem 0 1.3rem 0;
+    }
+
+
+    .tokoh {
+        padding: 3rem 7%;
+    }
+
+    .tokoh .tokoh-title {
+        padding-bottom: 0;
+    }
+
+    .tokoh .row .card img {
+        width: 15rem;
+    }
+
+    .tokoh .row .card .card-title {
+        font-size: 1.2rem;
+    }
+
+    .tokoh .row .card p {
+        font-size: 0.6rem;
+    }
+
+
+    .locate .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    .locate .row .maps {
+        width: 100%;
+    }
+
+    .locate .row .maps .map{
+        width: 20rem;
+        height: 15rem;
+    }
+
+    
+    .locate .forms .form input{
+        width: 15rem;   
+    }
+    
+}
